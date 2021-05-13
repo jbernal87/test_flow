@@ -17,3 +17,7 @@ cmake_minimum_required (VERSION 3.0)
 project (testflow)
 
 add_executable(main main.c)
+
+enable_testing()
+
+add_test(NAME mytest COMMAND ./main)
